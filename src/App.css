@@ -1,0 +1,99 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+.todo-container, .ai-container {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.todo-input, .question-input {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.todo-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.todo-list li.completed {
+  text-decoration: line-through;
+  color: #888;
+  background-color: #f0f0f0;
+}
+
+.answer {
+  background: #e9f7ef;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.answer h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 10px;
+  }
+  
+  .todo-input, .question-input {
+    flex-direction: column;
+  }
+  
+  input[type="text"] {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
